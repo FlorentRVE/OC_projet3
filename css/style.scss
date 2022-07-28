@@ -1,4 +1,6 @@
-// ===================== Réglage ==================
+// ======================================== Réglage =================================
+
+// ============= Variable ============
 
 $text: 'Roboto', sans-serif;
 $logo_title: 'Shrikhand', cursive;
@@ -7,30 +9,41 @@ $primary_color: #9356DC;
 $secondary_color: #FF79DA;
 $tert_color: #99E2D0;
 
+
+// ============= général =========
+
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     font-family: $text;
 }
 
-main {
-    width: 95%;
-    margin: 0 auto;
+// ============== Mixin ===========
+
+@mixin input__bg {
+    background-color: rgb(231, 231, 231);
 }
 
-// ================ Header ==================
+@mixin box-shadow($y-axis:7px, $blur:15px) {
+    box-shadow: 0px $y-axis $blur -10px #000000;
+}
+
+
+// ====================================== Header ================================
 
 .header__container {
     width: 100%;
-    padding: 15px 0;
-    border-bottom: 5px solid rgba(0,0,0,0.15);
+    padding: 30px 0px 13px 0px;
+    margin-bottom: 4px;
+    @include box-shadow(4px);
         img {
             display: block;
             height: auto;
-            width: 200px;
+            width: 170px;
 
             margin: 0 auto;
         }
@@ -42,23 +55,26 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
-
-    margin-bottom: 100px;
-
-        .landing_page__input {
-            margin-top: 10px;
-            padding: 5px;
-
-            i {
-                font-size: 20px;
-                margin-right: 20px;
-            }
-
-            input {
-                border: none;
-                font-size: 20px;
-                width: 150px;
+    margin-bottom: 50px;
+    background-color: #f4f4f4;
+    
+    .landing_page__input {
+        padding: 13px;
+        @include input__bg();
+        width: 100%;
+        text-align: center;
+        
+        i {
+            font-size: 17px;
+            margin-right: 20px;
+        }
+        
+        input {
+            border: none;
+            font-size: 17px;
+            width: 150px;
+            @include input__bg();
+            
             }
         }
 
@@ -75,11 +91,17 @@ main {
 
             h1 {
                 width: 80%;
-                margin: 30px auto;
+                margin: 25px auto 10px auto;
+                font-size: 25px;
+            }
+
+            p {
+                font-size: 19px;
             }
 
             button {
                 padding: 15px 30px;
+                margin-bottom: 50px;
                 border-radius: 40px;
                 font-size: 18px;
                 font-weight: 500;
@@ -87,7 +109,8 @@ main {
                 background: linear-gradient(184deg, rgba(255,121,218,1) 24%, rgba(147,86,220,1) 100%);
                 color: rgb(230, 228, 228);
                 border: none;
-                box-shadow: 5px 5px 15px -10px #000000;
+                @include box-shadow();
+                
             }
         }
 
@@ -95,59 +118,91 @@ main {
 
 // ==================== fonctionnement =====================
 
-.fonctionnement__title {
-    font-size: 35px;
+.fonctionnement {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto 30px auto;
+
+     h2 {
+        font-size: 25px;
+    }
+
 }
 
 .fonctionnement__card {
     display: flex;
     flex-direction: column;
-
-    margin-bottom: 140px;
-
-
-    .fonctionnement__card__item {
-        display: flex;
-        font-size: 20px;
-        font-weight: 700;
-        align-items: center;
-        margin-top: 40px;
-        padding: 30px;
-        border-bottom: 3px solid rgba(0, 0, 0, 0.109);
-    
-            i {
-                margin-right: 15px;
-                margin-left: 10px;
-                font-size: 23px;
-                color: gray;
-
-                &:hover {
-                    color: $primary_color;
-                }
-            }
-
-            .fa-circle {
-                color: $primary_color;
-                font-size: 30px;
-            }
-    }
+    margin-bottom: 50px;
 }
 
+.fonctionnement__card__item {
+    display: flex;
+    font-size: 16px;
+    font-weight: 500;
+    align-items: center;
+    margin-top: 30px;
+    padding: 25px;
+    border-radius: 20px;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.109);
+    @include box-shadow();
 
+        &:hover {
+            background-color: #9256dc23;
 
+            i {
+                color:#9356DC;
+            }
+        }
+
+        i {
+            margin: 0 20px 0 10px;
+            font-size: 20px;
+            color: gray;
+        }
+
+        .fa-circle {
+            color: $primary_color;
+            font-size: 25px;
+            margin-left: -36px;
+
+            &::after {
+                content: '1';
+                color: white;
+                font-size: 11px;
+                position: relative;
+                right: 15px;
+                bottom: 5px;
+            }
+        }
+}
 // ========================= Restaurant ====================
 
+.restaurants {
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+
+     h2 {
+        font-size: 25px;
+        width: 90%;
+        margin: 0 auto;
+    }
+}
 
 .restaurants_grid {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 20px;
+    width: 90%;
+    margin: 20px auto;
 
     .restaurants__card {
         box-shadow: 0px 0px 15px -5px #000000;
         width: 100%;
-        border-radius: 20px 20px 0 0;
+        max-height: 250px;
+        border-radius: 20px 20px 20px 20px;
         margin: 10px auto;
 
         span {
@@ -162,20 +217,21 @@ main {
 
         .fa-heart {
             color: $primary_color;
-            font-size: 25px;
+            font-size: 23px;
         }
         
         img {
             border-radius: 20px 20px 0 0;
-            height: auto;
+            height: 170px;
             width: 100%;
+            object-fit: cover;
         }
 
         .restaurants__card__content {
             display: flex;
-            align-items: center;
             justify-content: space-between;
-            padding: 20px;
+            padding: 15px;
+            font-size: 15px;
         }
     }
 }
