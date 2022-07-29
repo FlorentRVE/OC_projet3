@@ -1,0 +1,9 @@
+// ============== Mixin ===========
+
+@mixin input__bg {
+    background-color: rgb(231, 231, 231);
+}
+
+@mixin box-shadow($y-axis:7px, $blur:15px) {
+    box-shadow: 0px $y-axis $blur -10px #000000;
+}
