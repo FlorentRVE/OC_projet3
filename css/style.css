@@ -82,25 +82,25 @@ footer h4 {
   margin-bottom: 50px;
   background-color: #f4f4f4;
 }
-.landing_page__container .landing_page__input {
-  padding: 13px;
-  background-color: rgb(231, 231, 231);
+.landing_page__container .landing_page__localisation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(234, 234, 234);
   width: 100%;
-  text-align: center;
+  padding: 15px 0;
 }
-.landing_page__container .landing_page__input i {
+.landing_page__container .landing_page__localisation i {
   font-size: 17px;
   margin-right: 20px;
   color: #555;
 }
-.landing_page__container .landing_page__input input {
-  border: none;
+.landing_page__container .landing_page__localisation p {
   font-size: 17px;
   width: 150px;
-  background-color: rgb(231, 231, 231);
   font-weight: 600;
   color: #555;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.4px;
 }
 .landing_page__container .landing_page__card {
   font-size: 20px;
@@ -203,6 +203,13 @@ footer h4 {
 .restaurants_grid .restaurants__card .container_img {
   position: relative;
 }
+.restaurants_grid .restaurants__card .container_img img {
+  border-radius: 20px 20px 0 0;
+  height: 177px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .restaurants_grid .restaurants__card .container_img span {
   background-color: rgb(143, 255, 182);
   color: rgb(10, 150, 87);
@@ -215,13 +222,6 @@ footer h4 {
 .restaurants_grid .restaurants__card .fa-heart {
   color: black;
   font-size: 23px;
-}
-.restaurants_grid .restaurants__card img {
-  border-radius: 20px 20px 0 0;
-  height: 177px;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 .restaurants_grid .restaurants__card .restaurants__card__content {
   display: flex;

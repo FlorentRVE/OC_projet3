@@ -7,52 +7,52 @@
     margin-bottom: 50px;
     background-color: #f4f4f4;
     
-    .landing_page__input {
-        padding: 13px;
-        @include input__bg();
+    .landing_page__localisation {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(234, 234, 234);
         width: 100%;
-        text-align: center;
-        
+        padding: 15px 0;
+
         i {
             font-size: 17px;
             margin-right: 20px;
             color: #555;
         }
         
-        input {
-            border: none;
+        p {
             font-size: 17px;
             width: 150px;
-            @include input__bg();
             font-weight: 600;
             color: #555;
-            letter-spacing: 0.5px;
+            letter-spacing: 0.4px;
             
-            }
+        }
         }
 
-        .landing_page__card {
-            font-size: 20px;
-            text-align: center;
-            width: 90%;
-            max-height: 100%;
-            margin-top: 20px;
+    .landing_page__card {
+        font-size: 20px;
+        text-align: center;
+        width: 90%;
+        max-height: 100%;
+        margin-top: 20px;
 
-            h1,p,button {
-                margin-bottom: 30px;
-            }
-
-            h1 {
-                width: 80%;
-                margin: 25px auto 10px auto;
-                font-size: 25px;
-            }
-
-            p {
-                font-size: 19px;
-                color: #696767;
-            }
+        h1,p,button {
+            margin-bottom: 30px;
         }
+
+        h1 {
+            width: 80%;
+            margin: 25px auto 10px auto;
+            font-size: 25px;
+        }
+
+        p {
+            font-size: 19px;
+            color: #696767;
+        }
+    }
 
 }
 
@@ -148,6 +148,13 @@
         .container_img {
             position: relative;
 
+            img {
+                border-radius: 20px 20px 0 0;
+                height: 177px;
+                width: 100%;
+                object-fit: cover;
+            }
+
             span {
                 background-color: rgb(143, 255, 182);
                 color: rgb(10, 150, 87);
@@ -166,12 +173,7 @@
             font-size: 23px;
         }
         
-        img {
-            border-radius: 20px 20px 0 0;
-            height: 177px;
-            width: 100%;
-            object-fit: cover;
-        }
+
 
         .restaurants__card__content {
             display: flex;
