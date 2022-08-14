@@ -1,4 +1,4 @@
-// =================== Apparition animation ================
+// ==================== Apparition animation ================
 
 @keyframes fadeInAnimation {
     0% {
@@ -12,9 +12,7 @@
      }
 }
 
-.entree_item,
-.plats_item,
-.desserts_item {
+.carte__item {
         &_1 {
             animation:  1s ease-in 0s 1 fadeInAnimation;
         }
@@ -30,10 +28,10 @@
 }
 // ==================== Bouton plat animation ============
 
-.entree_item {
+.carte__item {
     position: relative;
     overflow: hidden;
-    .txt_1 {
+    .bloc_1 {
         .entree__texte {
             overflow: hidden;
             p {
@@ -48,12 +46,12 @@
         }
     }
 
-    .txt_2 {
+    .bloc_2 {
         position : absolute;
         width : 150px;
         height : 100px;
         padding-top: 2px;
-        background : $tert_color;
+        background : $tertiary_color;
         right :-150px;
         top: 0px;
         transition : .3s;
@@ -72,13 +70,16 @@
 
         cursor: pointer;
 
-        .txt_2 {
+        .bloc_1 {
+            .price {
+                margin-right: 70px;
+            }
+        }
+
+        .bloc_2 {
             right: -90px;
         }
 
-        .price {
-            margin-right: 70px;
-        }
 
         i {
             transform: rotate(360deg);
