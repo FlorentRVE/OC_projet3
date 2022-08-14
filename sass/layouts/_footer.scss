@@ -18,8 +18,15 @@ footer {
     }
 }
 
-.footer__container i {
-    width: 10px;
-    margin-right: 10px;
-    font-size: 13px;
+.footer__container {
+    i {
+        width: 10px;
+        margin-right: 10px;
+        font-size: 13px;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
 }

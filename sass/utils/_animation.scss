@@ -32,9 +32,10 @@
     position: relative;
     overflow: hidden;
     .bloc_1 {
-        .entree__texte {
+        .bloc__texte {
             overflow: hidden;
-            p {
+            
+            p, h3 {
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
@@ -133,7 +134,7 @@
     top: 0;
     left: 0;
     opacity: 0;
-    animation: opacity_bg 3s linear;
+    animation: opacity_bg 1s linear;
     visibility: hidden;
 }
 
@@ -150,7 +151,7 @@
         width: 100px;
         height: 100px;
         opacity: 0;
-        animation: spin 3s linear;
+        animation: spin 1s linear;
       }
     
 // ====================  Animation coeur ====================
