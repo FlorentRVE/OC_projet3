@@ -1,0 +1,31 @@
+@media only screen and (min-width: 993px) {
+
+    .fonctionnement {
+        width: 80%;
+      }
+
+    .fonctionnement h2,
+    .restaurants h2 {
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+    .restaurants_grid {
+        flex-direction: row;
+        flex-wrap: wrap;
+
+            .restaurants__card {
+                width: 45%;
+            }
+    }
+
+// ======================= Restaurant ===============
+
+    .resto_carte {
+        width: 85%;
+    }
+
+    
+    
+}

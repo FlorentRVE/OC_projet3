@@ -563,4 +563,115 @@ footer h4 {
 .resto_button {
   display: block;
   margin: 20px auto 100px auto;
+}
+
+@media screen and (max-width: 400px) {
+  .bloc__texte {
+    font-size: 12px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .landing_page__container {
+    height: 400px;
+  }
+  .landing_page__container .landing_page__localisation p {
+    font-size: 20px;
+  }
+  .landing_page__container .landing_page__card h1 {
+    font-size: 30px;
+  }
+  .landing_page__container .landing_page__card p {
+    font-size: 25px;
+  }
+  .landing_page__container .landing_page__card button {
+    margin-top: 20px;
+    font-size: 25px;
+  }
+  .fonctionnement__card__item {
+    font-size: 20px;
+  }
+  .restaurants_grid .restaurants__card {
+    height: 285px;
+    max-height: 285px;
+  }
+  .restaurants_grid .restaurants__card .restaurants__card__content {
+    font-size: 25px;
+  }
+  .heart-box {
+    margin-right: 50px;
+    margin-top: 15px;
+  }
+  .heart-box .heart_full {
+    font-size: 40px;
+  }
+  .heart-box .heart_full::after {
+    top: 0;
+    left: 0;
+  }
+  .heart-box .heart_empty {
+    font-size: 40px;
+  }
+  .header__resto,
+.header__home {
+    height: 100px;
+  }
+  footer {
+    font-size: 20px;
+    padding: 50px 0;
+  }
+  footer h4 {
+    text-align: center;
+    font-size: 25px;
+  }
+  footer .footer__container {
+    display: flex;
+    justify-content: space-around;
+  }
+  .entree h2, .plats h2, .desserts h2 {
+    font-size: 20px;
+  }
+  .carte__item .bloc_1 {
+    font-size: 20px;
+  }
+  .carte__item .bloc_1 .price {
+    font-size: 20px;
+  }
+  .resto_carte .resto_title {
+    font-size: 25px;
+  }
+  .resto_button {
+    font-size: 25px;
+  }
+  .carte__item:hover .bloc_1 .price {
+    margin-right: 120px;
+  }
+  .carte__item:hover .bloc_2 {
+    right: -40px;
+  }
+  .carte__item:hover .bloc_2 i {
+    font-size: 2em;
+    margin-left: 40px;
+    margin-top: 20px;
+  }
+}
+@media only screen and (min-width: 993px) {
+  .fonctionnement {
+    width: 80%;
+  }
+  .fonctionnement h2,
+.restaurants h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .restaurants_grid {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .restaurants_grid .restaurants__card {
+    width: 45%;
+  }
+  .resto_carte {
+    width: 85%;
+  }
 }/*# sourceMappingURL=style.css.map */
