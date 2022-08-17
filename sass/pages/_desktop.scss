@@ -1,5 +1,12 @@
 @media only screen and (min-width: 993px) {
 
+    .header__home,
+    .header__resto {
+        img {
+            width: 230px;
+        }
+    }
+
     .fonctionnement {
         width: 80%;
       }

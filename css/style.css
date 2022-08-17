@@ -79,7 +79,6 @@
 
 @-webkit-keyframes spin {
   0% {
-    transform: rotate(0deg);
     opacity: 1;
   }
   95% {
@@ -93,7 +92,6 @@
 
 @keyframes spin {
   0% {
-    transform: rotate(0deg);
     opacity: 1;
   }
   95% {
@@ -146,8 +144,10 @@
 
 .loader {
   position: absolute;
+  top: 40%;
   left: 50%;
-  top: 50%;
+  margin-left: -50px;
+  margin-top: -50px;
   z-index: 999;
   border: 16px solid #f3f3f3;
   border-top: 16px solid #9356DC;
@@ -655,6 +655,10 @@ footer h4 {
   }
 }
 @media only screen and (min-width: 993px) {
+  .header__home img,
+.header__resto img {
+    width: 230px;
+  }
   .fonctionnement {
     width: 80%;
   }
