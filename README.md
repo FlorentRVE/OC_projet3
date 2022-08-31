@@ -9,9 +9,8 @@ Ohmyfood! est une jeune startup qui voudrait s'imposer sur le marché de la rest
 Logo et titres: Shrikhand
 Texte: Roboto
 Couleurs: 
-* Primaire: #9356DC
-* Secondaire: #FF79DA
-* Tertiaire: #99E2D0
+
+![Cover](https://github.com/FlorentRVE/OC_projet3/blob/main/images/Capture.PNG)
 
 ## Technologies
 * Le développement devra se faire en CSS, sans JavaScript.
